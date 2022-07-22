@@ -11,7 +11,7 @@
 
 ## La mia soluzione
 
-Per risolvere il problema ho inizialmente realizzato un algoritmo ricorsivo (inefficiente) che conta il numero di percorsi con al più k svolte per ogni cella della matrice nn che rispetta le seguenti regole generali:
+Per risolvere il problema ho inizialmente realizzato un algoritmo ricorsivo (inefficiente) che conta il numero di percorsi con al più k svolte per ogni cella della matrice *__n__ x __n__* che rispetta le seguenti regole generali:
 * Per la prima cella in alto a sinistra esiste solo un percorso lecito qualunque sia il numero di svolte consentite;
 * Per la prima riga esiste solo un percorso lecito se la direzione è orizzontale;
 * Per la prima colonna esiste solo un percorso lecito se la direzione è verticale;
@@ -176,9 +176,9 @@ Risultato dell’algoritmo su diversi input
 
 
 La funzione ***es(n,k)*** ha una complessità in ***O((n^2)k)***:
-Come già detto l’inizializzazione della matrice richiede tempo in ***O((n^2)k)***;
-I tre casi base richiedono tempo in ***O(n^2) + O(k) + O(nk)***
-Il calcolo delle celle rimanenti richiede tempo in ***O((n^2)k)***
+* Come già detto l’inizializzazione della matrice richiede tempo in ***O((n^2)k)***;
+* I tre casi base richiedono tempo in ***O(n^2) + O(k) + O(nk)***
+* Il calcolo delle celle rimanenti richiede tempo in ***O((n^2)k)***
 Quindi avrò ***O((n^2)k) + O(n^2) + O(k) + O(nk) + O((n^2)k)*** il chè è uguale a ***O((n^2)k)***.
 
 
