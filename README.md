@@ -179,6 +179,7 @@ La funzione ***es(n,k)*** ha una complessità in ***O((n^2)k)***:
 * Come già detto l’inizializzazione della matrice richiede tempo in ***O((n^2)k)***;
 * I tre casi base richiedono tempo in ***O(n^2) + O(k) + O(nk)***
 * Il calcolo delle celle rimanenti richiede tempo in ***O((n^2)k)***
+
 Quindi avrò ***O((n^2)k) + O(n^2) + O(k) + O(nk) + O((n^2)k)*** il chè è uguale a ***O((n^2)k)***.
 
 
